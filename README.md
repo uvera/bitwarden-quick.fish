@@ -1,5 +1,8 @@
 # bitwarden-quick.fish
 > Quickly copy a password from bitwarden official server
+## Dependencies
+> bw (bitwarden cli), xclip
+
 ## Installation
 Install with fundle:
 ```console
