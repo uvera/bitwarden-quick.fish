@@ -34,7 +34,7 @@ function bwq -d "Quickly copy a password from bitwarden official server"
                 return $ret
             end
             echo 'Copied to clipboard.'
-            echo $value | xclip -selection c
+            echo -n $value | xclip -selection c
             set -e value
     end
     return 0
