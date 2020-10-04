@@ -21,8 +21,8 @@ function bwq -d "Quickly copy a password from bitwarden official server"
                         set token (bw unlock --raw)
                     end
                     echo $token > $HOME/.cache/BW_SESSION
-                    set -l ret (bwq $argv)
-                    return $ret
+                    bwq $argv
+                    return $status 
                 end
             else
                 set -l token (bw unlock --raw)
@@ -30,8 +30,8 @@ function bwq -d "Quickly copy a password from bitwarden official server"
                     set token (bw login --raw)
                 end
                 echo $token > $HOME/.cache/BW_SESSION
-                set -l ret (bwq $argv)
-                return $ret
+                bwq $argv
+                return $status
             end
             echo 'Copied to clipboard.'
             echo -n $value | xclip -selection c
