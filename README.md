@@ -17,5 +17,5 @@ fisher add uvera/bitwarden-quick.fish
 ```
 Install manually:
 ```console
-curl https://raw.githubusercontent.com/uvera/bitwarden-quick.fish/master/bitwarden-quick.fish --create-dirs -sLo ~/.config/fish/functions/bitwarden-quick.fish
+curl https://raw.githubusercontent.com/uvera/bitwarden-quick.fish/master/functions/bwq.fish --create-dirs -sLo ~/.config/fish/functions/bwq.fish
 ```
